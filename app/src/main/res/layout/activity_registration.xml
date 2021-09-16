@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background_color"
-    tools:context=".MainActivity">
+    tools:context=".RegistrationActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,18 +16,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log In"
+                android:text="Registration"
                 android:textColor="@android:color/white"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:gravity="center">
-
-            </TextView>
+                android:TextAppearance="?android:textAppearanceLarge"
+                android:gravity="center"
+                />
 
             <EditText
                 android:layout_width="match_parent"
@@ -38,7 +36,7 @@
                 android:hint="Email:"
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
-                android:id="@+id/email_login"/>
+                android:id="@+id/email_reg"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -47,40 +45,33 @@
                 android:padding="15dp"
                 android:inputType="textPassword"
                 android:textColor="@android:color/white"
-                android:background="@drawable/edittext_background"
+                android:textColorHint="@drawable/edittext_background"
                 android:hint="Password:"
-                android:id="@+id/password_login"/>
+                android:id="@+id/password_reg"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 app:backgroundTint="@android:color/white"
-                android:text="Log In"
-                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Register"
                 android:textColor="@color/black"
-                android:id="@+id/btn_login"/>
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/btn_reg"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:id="@+id/forget_password"
-                android:text="Forget Password?"
-                android:padding="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Sign Up"
-                android:padding="5dp"
-                android:id="@+id/sign_up"/>
+                android:textColor="@color/white"
+                android:text="Already have an account? Sign in here"
+                android:id="@+id/signin_here"/>
+
+
+
 
         </LinearLayout>
-
     </ScrollView>
 
 
 </LinearLayout>
-
-
